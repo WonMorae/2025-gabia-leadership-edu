@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run clean && esbuild src/main.jsx --bundle --outfile=dist/bundle.js --loader:.jsx=jsx && copyfiles index.html dist",
+    "build": "npm run clean && tailwindcss -i src/index.css -o dist/index.css && esbuild src/main.jsx --bundle --outfile=dist/bundle.js --loader:.jsx=jsx && copyfiles index.html dist",
     "clean": "rm -rf dist"
   },
   "repository": {
@@ -20,10 +20,13 @@
   },
   "homepage": "https://github.com/WonMorae/2025-gabia-leadership-edu#readme",
   "devDependencies": {
+    "autoprefixer": "^10.4.21",
     "copyfiles": "^2.4.1",
     "esbuild": "^0.25.11",
+    "postcss": "^8.5.6",
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "tailwindcss": "^4.1.15"
   },
   "dependencies": {
     "framer-motion": "^12.23.24",
