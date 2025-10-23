@@ -1,0 +1,30 @@
+{
+  "name": "2025-gabia-leadership-edu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild src/App.jsx --bundle --outfile=dist/bundle.js --loader:.jsx=jsx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WonMorae/2025-gabia-leadership-edu.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WonMorae/2025-gabia-leadership-edu/issues"
+  },
+  "homepage": "https://github.com/WonMorae/2025-gabia-leadership-edu#readme",
+  "devDependencies": {
+    "esbuild": "^0.25.11",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "dependencies": {
+    "framer-motion": "^12.23.24",
+    "lucide-react": "^0.546.0"
+  }
+}
